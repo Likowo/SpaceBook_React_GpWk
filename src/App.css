@@ -1,0 +1,85 @@
+/* GENERAL ------------------------------------ */
+#root{
+  /* background-color:#f0f2f5 !important; */
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.mainLink{
+  color: purple;
+  text-decoration: none;
+  font-size: 80px;
+  font-weight: bold;
+  /* margin: auto; */
+  font-family: 'fantasy';
+}
+
+/* to undo default Link style */
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* header stays when scrolling */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10; 
+  /* to counteract contacts zindex */
+}
+
+.hide {
+  display: none;
+}
+
+/* for stories component */
+.underline {
+  border-bottom: 3px solid #1876f2;
+  border-radius: 0 !important;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+/* screen sizes */
+.mobile{
+  max-height: 844px;
+  max-width: 390px;
+}
+
+.tablet{
+  max-width: 1200px;
+}
+
+.desktop{
+  min-width: 1201px;
+}
+
+/* END GENERAL ---------------------------------------------- */
+
+
+
+.storiesContainer{
+  /* background-color: red !important; */
+  /* margin-top: 85px !important; */
+  border: none !important;
+  height: 270px !important;
+  width: 650px !important;
+}
+
+
