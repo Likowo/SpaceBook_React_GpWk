@@ -1,15 +1,5 @@
 /* DESKTOP------------------------------------------------------ */
 
-.storiesContainer{
-  /* background-color: red !important; */
-  /* margin-top: 85px !important; */
-  border: none !important;
-  height: 270px !important;
-  width: 650px !important;
-  background-color: rgb(233, 199, 199);
-}
-
-
 /* @media (min-width: 1201px){ */
   @media(min-width: 1201px){
 
@@ -39,63 +29,7 @@ body{
   border-bottom: 3px solid #1876f2;
   border-radius: 0 !important;
 } */
-  /*  STORIES --------------------------------------------------- */
-.storiesContainer * *:hover{
-  cursor: pointer;
-}
-
-.storiesContainer{
-  border: 2px solid rgb(255, 0, 0) !important;
-  background-color: lightblue ;
-  width: 450px;
-  margin-top: 0 !important;
-  color: gray;
-  font-size: 15px;
-}
-
-.storiesContainer .options{
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.5em;
-  text-align: center;
-  padding: 0 10px;
-}
-
-.storiesContainer .options *{
-  width: 50%;
-  padding-bottom: 5px;
-  margin-bottom: -8px;
-}
-
-
-.stories{
-  height: 200px;
-  display: flex;
-  /* justify-content: space-evenly; */
-  flex-wrap: nowrap;
-}
-
-.story{
-  border: 5px solid lime;
-  border-radius: 10px;
-  flex-shrink: 0;
-  height: 190px;
-  width: 120px;
-  margin: 0 7px;
-  overflow-y: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
-  overflow: auto;
-}
-
-.story .avatar {
-  height: 30px;
-  border-radius: 50%;
-  border: 4px solid #1876f2;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
+  
 /* DESKTOP HEADER --------------------------- */
 .header * *:hover {
   cursor: pointer;
@@ -103,29 +37,32 @@ body{
 
 .header{
   border: 1px solid grey;
-  background-color: 5px white;
+  /* background-color: 5px white; */
   background-image: url('https://www.citypng.com/public/uploads/preview/stars-galaxy-planet-illustration-transparent-png-31629667891pwgssraa4l.png');
   height: 7vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: aquamarine;
+  font-size: 15px;
+  /* color: aquamarine; */
 }
 
 .header > *{
-  border: 1px solid red;
+  border: none !important;
   display: flex;
   justify-content: space-evenly;
   /* align-items: center; */
 }
 .header *{
-  height: 40px;
+  height: 80px;
 }
 .header .logo{
   height: 40px;
+  width: auto;
   margin-left: 10px;
 }
 .header .searchContainer{
+  border: solid 4px orange;
   background-color: #f0f2f5;
   display: flex;
   justify-content: center;
@@ -149,7 +86,7 @@ body{
 }
 
 .header .middle *{
-  border: 1px solid lime;
+  border:none !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +122,7 @@ body{
   height: 20px;
   width: 20px;
 }
-/* POSTS ------------------- */
+/* POSTS ------ Mathew CSS------------- */
 
 .container{
   /* border: solid red; */
@@ -234,46 +171,50 @@ body{
 }
 
 /* STORIES -------------------------------------- */
+
 .storiesContainer * *:hover{
   cursor: pointer;
   background-color: rgba(128, 128, 128, 0.363);
 }
-
- .storiesContainer{
-  border: 2px solid grey;
+.storiesContainer .options *:hover{
+  cursor: pointer;
+  border-radius: 10px !important;
+  background-color: rgba(128, 128, 128, 0.363);
+  border-radius: 10px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.storiesContainer{
+  /* border: 2px solid grey; */
   border-radius: 10px;
   width: 550px;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   /* padding: 10px; */
   background-color: white;
-  height: 260px;
+  height: 250px;
+  margin-bottom: 20px;
 }
-
 .storiesContainer .options{
   display: flex;
   justify-content: space-around;
   font-size: 1.5em;
   text-align: center;
   padding: 10px 10px;
-  
 }
-
 .storiesContainer .options *{
   width: 50%;
   padding-bottom: 5px;
   margin-bottom: -10px;
 }
-
- .stories{
+.stories{
   height: 250px;
   display: flex;
   /* justify-content: space-evenly; */
   flex-wrap: nowrap;
   overflow: scroll;
 }
-
- .story{
-  border: 1px solid lime;
+.story{
+  /* border: 1px solid lime; */
   border-radius: 10px;
   background-color: #006eff48;
   flex-shrink: 0;
@@ -281,7 +222,6 @@ body{
   width: 120px;
   margin: 10px 7px;
 }
-
 .story .name {
   /* border: 1px solid purple; */
   width: 110px;
@@ -294,15 +234,13 @@ body{
   margin-left: 10px;
   overflow: hidden;
 }
-
 .story .name:hover{
   background-color: transparent;
 }
-
- .story .avatar {
+.story .avatar {
   height: 30px;
   border-radius: 50%;
-  border: 4px solid #1876f2;
+  border: 4px solid #1876F2;
   margin-left: 10px;
   margin-top: 10px;
 }
@@ -405,97 +343,98 @@ body{
 /*  DOUG ----------------CONTACTS-------------------------------------- */
 /* Doug CSS */
 .universe {
-  width: 400px;
-  display: flex; 
+  width: 25vw;
+  min-width: 200px;
+  display: flex;
   flex-direction: column;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e4/StarfieldSimulation.gif");
-  height: 100vh;
+  height: fit-content;
 }
 .innerUniverse{
-  border: solid black; 
-
+  border: solid white;
+  border-width: 1px;
   height: 20px;
-
   margin-left: 2%;
-  margin-top: .5%;
+  margin-top: 2%;
   margin-right: 2%;
-  
-  min-height: 80px; 
+  min-height: 80px;
   object-fit: cover;
   border-radius: 8px;
-  
   position: relative;
 }
 .userImage {
   top: 1.5vh;
   left: 1.5vw;
-
-  border: solid black; 
-
+  border: solid black;
   height: 50px;
   width: 50px;
   min-width: 50px;
   min-height: 50px;
-  
   background-color: #bbb;
   border-radius: 50%;
   text-align: center;
   position: absolute;
 }
+.userImage img {
+  height: inherit;
+  border-radius: 50%;
+}
 .userNameBackground{
   font-family: fantasy;
   font-weight: 900;
   height: 25px;
-  width: fit-content; 
+  width: fit-content;
   border-radius: 8px;
-
   top: 1.5vh;
-  left: 14vw; 
+  left: 14vw;
   position: absolute;
-  
   background-color: black;
   z-index: 2;
-  color: purple; 
   opacity: 0.6;
 }
 .userName{
   font-family: fantasy;
   font-weight: 900;
   height: 20px;
-  width: fit-content; 
+  width: fit-content;
   border-radius: 8px;
-
   top: 1.5vh;
-  left: 14vw; 
+  left: 14vw;
   position: absolute;
   /* height: 20%; */
-
-  color: white; 
+  color: white;
   z-index: 3;
 }
 
 
-  /* NAV ------------------------------------- Ann CSS */
+
+  /* NAV -----------------------Ann CSS */
   /* can make show at certain screen sizes if you want */
   .sideNavbar{
-    background-color: white;
+    /* background-color: white; */
     background-image: url('https://thumbs.gfycat.com/AnimatedDeficientAlleycat-size_restricted.gif');
+    border: solid 4px white;
     width: 300px;
     color: orange ;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
+    border-radius: 1%;
   }
   
   .sideNavbar > * {
-    border: 1px solid white;
+    border: 3px solid rgb(224, 153, 153);
+    border-radius: 8%;
     height: 70px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    padding: 2%;
+    margin: 3%;
   }
 
   .sideNavbar img {
     margin: 0 10px;
-    height: 20px;
+    height: 35px;
   }
   
   .sideNavbar .name{
@@ -509,12 +448,14 @@ body{
 
   /* CONTACTS ---------------------------------------------- */
   .universe{
+    border: solid 2px white;
     height: fit-content;
     padding: 10px;
   }
   .userImage img {
+    border: solid 4px white;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 60%;
   }
 
 
@@ -526,9 +467,10 @@ body{
   width: 300px;
   min-height: 100px;
   position: absolute;
-  top: 0;
+  top: -79px;
   background-color: white;
   z-index: 11;
+  border-radius: 8px;
 }
 
 .searchPopUp .top {
@@ -556,14 +498,14 @@ body{
 }
 
 .searchPopUp .results{
-  border: 1px solid lime;
+  /* border: 1px solid lime; */
   text-align: center;
   max-height: 500px;
   overflow: scroll;
 }
 
 .searchItem{
-  border: 1px solid peru;
+  border: 5px solid peru;
   display: flex;
   align-items: center;
   height: 50px;
@@ -582,7 +524,7 @@ body{
 }
 
 .searchItem .right{
-  border: 1px solid yellowgreen;
+  /* border: 1px solid yellowgreen; */
   text-align: left;
   margin-left: 10px;
 }
@@ -592,15 +534,12 @@ body{
 }
 
 
-
-
-
 /* FEED ------------------------------------------------------------- */
   
 /* --------- FEED --------------------- */
 .feedContainer{
   /* border: 3px solid red; */
-  /* background-color: white; */
+  background-color:whitesmoke;
   border-radius: 10px;
   width: 650px;
   margin: auto;
@@ -608,27 +547,26 @@ body{
 }
 
 .friendPost{
-  /* border: 2px solid blue; */
+  background-color: rgb(244, 243, 242);
   border-radius: 10px;
   margin-bottom: 35px;
-  background-color: white;
   /* height: 200px; */
   padding: 10px 15px;
 }
 
 .friendPost .top{
-  border: 1px solid rgb(75, 77, 233);
+  /* border: 1px solid rgb(75, 77, 233); */
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
 }
 .friendPost .left{
-  border: 1px solid hotpink;
+  /* border: 1px solid hotpink; */
   display: flex;
   align-items: center;
 }
 .friendPost .left div{
-  border: 2px solid purple !important;
+  /* border: 2px solid purple !important; */
   margin-left: 10px;
   width: 100% !important;
 }
@@ -639,14 +577,14 @@ body{
 }
 
 .friendPost .right{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   opacity: .8;
 }
 
 .friendPost .right div {
-  border: 1px solid green;
+  border: 1px solid red;
   border-radius: 50%;
   height: 30px;
   width: 30px;
@@ -697,7 +635,7 @@ body{
 }
 
 .comments {
-  border: 1px solid greenyellow !important;
+  /* border: 1px solid greenyellow !important; */
   margin-top: 5px;
 }
 
@@ -712,7 +650,7 @@ body{
 
 /* INDIVIDUAL COMMENT ---------------------- */
 .comments .commentContainer {
-  border: 1px solid purple;
+  /* border: 2px solid purple; */
   margin-top: 10px;
   display: flex;
 }
@@ -737,7 +675,8 @@ body{
 }
 
 .addComment{
-  border: 1px solid orange;
+  border: 1px solid blueviolet;
+  border-radius: 30%;
   margin-top: 10px;
   height: 50px;
   display: flex;
@@ -761,8 +700,18 @@ body{
   color: rgba(0, 0, 0, 0.76);
 }
 
+.quotesButton{
+  border: solid 5px black;
+  border-radius: 20%;
+  background-color: black;
+  height: 6vh;
+  color: green;
+  font-size: 20px;
+  /* width: 25%; */
+}
+
 .textArea{
-  border: solid 2px yellow;
+  /* border: solid 2px yellow; */
   height: 20vh;
   display: flex;
   /* font-family: 'wingdings'  */
@@ -865,6 +814,7 @@ body{
 }
 
 .profileHead .right button:hover{
+  /* cursor: pointer; */
 
 }
 
@@ -985,22 +935,91 @@ button.message{
 
 /* PHOTOLIST */
 .photoList{
-  border: 2px solid purple;
-  background-color: white;
-  border-radius: 10px;
-  margin-top: 20px;
-  height: 400px;
-}
-
-/* FRIENDS LIST */
-.friendsList{
   border: 2px solid blue;
   background-color: white;
   border-radius: 10px;
   margin-top: 20px;
-  height: 400px;
+  /* height: 450px; */
 }
-
+.photoList .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.photoList .all{
+  color: blue;
+}
+.photoList .pics {
+  border: 2px solid lime;
+  margin: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.photoList .container {
+  border: 1px solid purple;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  margin-bottom: 5px;
+}
+.all{
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.all:hover{
+  background-color: #D6D7DA;
+}
+/* FRIENDS LIST */
+.friendsList{
+  border: 2px solid purple;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  /* height: 400px; */
+}
+.friendsList .title{
+  border: 1px solid red;
+  padding: 10px;
+}
+.friendsList .title .top {
+  display: flex;
+  justify-content: space-between;
+}
+.bold{
+  font-weight: bold;
+}
+p.bold:hover{
+  text-decoration: underline;
+}
+.mutes{
+  opacity: .8;
+}
+.friendsList .all{
+  color: blue;
+}
+.friendsList .pics {
+  border: 2px solid lime;
+  margin: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.friendsList .container {
+  border: 1px solid purple;
+  height: 100px;
+  width: 100px;
+  font-size: .6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.friendsList img{
+  height: 98px;
+  border-radius: 10px;
+}
+.friendsList .name {
+  font-weight: bold;
+}
 
 }
 /* } */

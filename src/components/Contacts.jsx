@@ -28,7 +28,7 @@ const Contacts = () => {
                 </div>
               
                 <p className='userNameBackground'>
-                  . UserName .
+                {friends[index].name}
                 </p>
               
                 <p className='userName'>

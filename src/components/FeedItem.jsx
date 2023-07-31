@@ -60,12 +60,13 @@ const FeedItem = ({ friend, index }) => {
       </div>
 
       <div className="textArea">
+      <button onClick={getRandomQuotes} className="quotesButton"> Show Quote Of The Day </button>
       <>
   {quotes && quotes.map((quotes, index) => {
    return(
     <div key={index}>
       <h2> Author Name: {quotes.author} </h2>
-      <p> Quote of the Day: {quotes.content }</p>
+      <p> {quotes.content }</p>
     </div>);
   })}
   {/* <li> {quotes && <p> {quotes}</p>} </li> */}
